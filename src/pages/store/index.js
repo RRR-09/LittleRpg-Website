@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductListing from '../components/ProductListing';
+import ProductListing from '../../components/ProductListing';
 
 const IndexPage = () => <ProductListing />;
 
