@@ -1,0 +1,115 @@
+{
+    "Test3": {
+        "friendly_name": "Test Keys",
+        "commands": [
+            "crazycrate give physical Fortune 1 {username}",
+            "crazycrate give physical Fortune 1 {username}"
+        ]
+    },
+    "Membership_1Month": {
+        "paypal_id": "DPPVPMMSF3V5Y",
+        "friendly_name": "1 Month Premium",
+        "commands": [
+            "lp user {username} parent addtemp member 30d"
+        ]
+    },
+    "Membership_Permanent": {
+        "paypal_id": "YFXC599AE9GMJ",
+        "friendly_name": "Permanent Premium",
+        "commands": [
+            "lp user {username} parent add member"
+        ]
+    },
+    "Fortune3": {
+        "paypal_id": "J5H62GZ73JB2Y",
+        "friendly_name": "Fortune Crate Key (x3)",
+        "commands": [
+            "crazycrate give physical Fortune 3 {username}"
+        ]
+    },
+    "Fortune6": {
+        "paypal_id": "4FXK66YTRT8S4",
+        "friendly_name": "Fortune Crate Key (x6)",
+        "commands": [
+            "crazycrate give physical Fortune 6 {username}",
+            "crazycrate giveall physical Boost 1"
+        ]
+    },
+    "Fortune10": {
+        "paypal_id": "A5XVDY2MT93MQ",
+        "friendly_name": "Fortune Crate Key (x10)",
+        "commands": [
+            "crazycrate give physical Fortune 10 {username}",
+            "crazycrate giveall physical Boost 2"
+        ]
+    },
+    "Magic3": {
+        "paypal_id": "34PS668GR3LBN",
+        "friendly_name": "Magic Crate Key (x3)",
+        "commands": [
+            "crazycrate give physical Magic 3 {username}"
+        ]
+    },
+    "Magic6": {
+        "paypal_id": "VNNEVFP26686W",
+        "friendly_name": "Magic Crate Key (x6)",
+        "commands": [
+            "crazycrate give physical Magic 6 {username}",
+            "crazycrate giveall physical Boost 1"
+        ]
+    },
+    "Magic10": {
+        "paypal_id": "Z7PSWHN8SN3Z2",
+        "friendly_name": "Magic Crate Key (x10)",
+        "commands": [
+            "crazycrate give physical Magic 10 {username}",
+            "crazycrate giveall physical Boost 2"
+        ]
+    },
+    "Legendary3": {
+        "paypal_id": "MMF72S4HZQHHN",
+        "friendly_name": "Legendary Crate Key (x3)",
+        "commands": [
+            "crazycrate give physical Legendary 3 {username}"
+        ]
+    },
+    "Legendary6": {
+        "paypal_id": "KXP4NUTPYDDJS",
+        "friendly_name": "Legendary Crate Key (x6)",
+        "commands": [
+            "crazycrate give physical Legendary 6 {username}",
+            "crazycrate giveall physical Boost 1"
+        ]
+    },
+    "Legendary10": {
+        "paypal_id": "CHDK65ZU4A8FN",
+        "friendly_name": "Legendary Crate Key (x10)",
+        "commands": [
+            "crazycrate give physical Legendary 10 {username}",
+            "crazycrate giveall physical Boost 2"
+        ]
+    },
+    "Spawner3": {
+        "paypal_id": "GHGFCQBTHQ2Q2",
+        "friendly_name": "Spawner Crate Key (x3)",
+        "commands": [
+            "crazycrate give physical Spawner 3 {username}"
+        ]
+    },
+    "Spawner6": {
+        "paypal_id": "56C4HU4ND99AU",
+        "friendly_name": "Spawner Crate Key (x6)",
+        "commands": [
+            "crazycrate give physical Spawner 6 {username}",
+            "crazycrate giveall physical Boost 1"
+        ]
+    },
+    "Spawner10": {
+        "paypal_id": "2JHHWWGNYC9ZL",
+        "friendly_name": "Spawner Crate Key (x10)",
+        "commands": [
+            "crazycrate give physical Spawner 10 {username}",
+            "crazycrate giveall physical Boost 2"
+        ]
+    }
+}
