@@ -1,0 +1,24 @@
+#logo-container,
+#logo-container h1,
+#logo-container img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+#logo-container h1 img {
+  /* height: 15em; */
+  width: 25vw;
+  min-width: 6em;
+}
+@media only screen and (max-width: 720px) {
+  #logo-container h1 img {
+    /* height: 10em; */
+    width: 60vw;
+  }
+}

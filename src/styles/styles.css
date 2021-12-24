@@ -1,0 +1,22 @@
+#wrapper {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+}
+
+#wrapper a {
+  color: #61ac4c;
+}
+#wrapper .fa-custom {
+  text-shadow: 2px 2px 2px #3b3b3b;
+  font-size: 5em;
+}
+@media only screen and (max-width: 720px) {
+  #wrapper .fa-custom {
+    font-size: 4em;
+  }
+}

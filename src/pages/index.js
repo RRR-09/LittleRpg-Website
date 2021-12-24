@@ -1,11 +1,15 @@
 import * as React from "react";
 import BackgroundVideo from "../components/BackgroundVideo";
+import Logo from "../components/Logo";
+import "../styles/styles.css";
 // markup
 const IndexPage = () => {
   return (
     <>
       <BackgroundVideo />
-      <p>Test</p>
+      <div id="wrapper">
+        <Logo />
+      </div>
     </>
   );
 };
