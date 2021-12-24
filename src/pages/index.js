@@ -3,17 +3,18 @@ import BackgroundVideo from "../components/BackgroundVideo";
 import Logo from "../components/Logo";
 import Navbar from "../components/Navbar";
 import "../styles/styles.css";
-// markup
-const IndexPage = () => {
+const HomePage = ({ location }) => {
   return (
     <>
       <BackgroundVideo />
       <div id="wrapper">
-        <Logo />
-        <Navbar />
+        <div id="content">
+          <Logo />
+          <Navbar currentPage={location.pathname} />
+        </div>
       </div>
     </>
   );
 };
 
-export default IndexPage;
+export default HomePage;

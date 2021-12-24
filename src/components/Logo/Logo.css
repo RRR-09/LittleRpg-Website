@@ -10,6 +10,10 @@
   -webkit-user-select: none;
   -o-user-select: none;
   user-select: none;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #logo-container h1 img {
   width: 25vw;

@@ -20,3 +20,29 @@
     font-size: 4em;
   }
 }
+
+/* Desktop */
+#content {
+  width: 40vw;
+}
+
+/* Mid-sized devices */
+/* @media (max-width: 1000px) {
+  #content {
+    width: 70%;
+  }
+  .custom-container {
+    width: 70%;
+  }
+} */
+
+/* Mobile */
+/* @media (max-width: 500px) {
+  
+  #content {
+    width: 95%;
+  }
+  .custom-container {
+    width: 95%;
+  }
+} */
