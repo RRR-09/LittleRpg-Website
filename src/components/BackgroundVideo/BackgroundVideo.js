@@ -1,8 +1,19 @@
 import React from "react";
 import bg from "../../assets/bg.mp4";
-import { backgroundVideoStyle } from "./BackgroundVideo.module.css";
 const BackgroundVideo = () => (
-  <video autoPlay muted loop className={backgroundVideoStyle}>
+  <video
+    autoPlay
+    muted
+    loop
+    style={{
+      position: "fixed",
+      right: 0,
+      bottom: 0,
+      minWidth: "100vw",
+      minHeight: "100vh",
+      zIndex: -100,
+    }}
+  >
     <source src={bg} type="video/mp4" />
   </video>
 );
