@@ -3,5 +3,5 @@ module.exports = {
     siteUrl: "https://LittleRpg.net",
     title: "LittleRpg",
   },
-  plugins: ["gatsby-plugin-styled-components"],
+  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-fontawesome-css"],
 };
