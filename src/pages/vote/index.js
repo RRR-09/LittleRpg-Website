@@ -1,15 +1,27 @@
-// Step 1: Import React
-import * as React from 'react'
+import React from "react";
+import BackgroundVideo from "../../components/BackgroundVideo";
+import Navbar from "../../components/Navbar";
+import VoteList from "../../components/VoteList";
+import "../../components/VoteList/VoteList.css";
+import VoteLinksJSON from "../../content/vote_links.json";
 
-// Step 2: Define your component
-const Voting = () => {
-    return (
-        <main>
-            <title>Vote</title>
-            <h1>Vote</h1>
-        </main>
-    )
-}
+const VotePage = ({ location }) => {
+  return (
+    <>
+      <BackgroundVideo />
+      <div className="votelist-container">
+        <h1>Voting Links</h1>
+        <div class="votelist-panel">
+          <VoteList layoutData={VoteLinksJSON} />
+        </div>
+      </div>
 
-// Step 3: Export your component
-export default Voting
+      <div class="footer-bar">
+        <Navbar currentPage={location.pathname} />
+      </div>
+
+      {/* Required on site to be listed */}
+    </>
+  );
+};
+export default VotePage;
