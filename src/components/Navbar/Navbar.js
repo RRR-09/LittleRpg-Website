@@ -43,26 +43,28 @@ const Navbar = ({ currentPage }) => {
       </div>
       {currentPage !== "/vote" && (
         <div className="nav-item">
-          <Link to="/vote">
+          {/* <Link to="/vote"> */}
+          <Link to="#">
             <FontAwesomeIcon
               icon={faVoteYea}
               size="5x"
               className="fa-shadow fa-responsive-size hvr-pulse"
             />
           </Link>
-          <h2>Vote</h2>
+          <h2>Vote (WIP)</h2>
         </div>
       )}
       {currentPage !== "/store" && currentPage !== "/store/premium" && (
         <div className="nav-item">
-          <Link to="/store">
+          {/* <Link to="/store"> */}
+          <Link to="#">
             <FontAwesomeIcon
               icon={faHandHoldingUsd}
               size="5x"
               className="fa-shadow fa-responsive-size hvr-pulse"
             />
           </Link>
-          <h2>Store</h2>
+          <h2>Store (WIP)</h2>
         </div>
       )}
     </nav>
