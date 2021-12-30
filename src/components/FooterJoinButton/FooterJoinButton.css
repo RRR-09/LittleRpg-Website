@@ -1,0 +1,37 @@
+.copy-ip-container {
+  margin-top: 8px;
+  display: flex;
+  font-size: 21px;
+}
+.copy-ip-label {
+  background-color: #434643;
+  padding: 15px;
+}
+.copy-ip-label span {
+  color: #25c936;
+}
+.copy-ip {
+  background-color: #333533;
+  cursor: pointer;
+  padding: 15px;
+  color: #fff;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.footer-copy-ip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 16px;
+  color: #fff;
+  flex-wrap: wrap;
+  text-align: center;
+}

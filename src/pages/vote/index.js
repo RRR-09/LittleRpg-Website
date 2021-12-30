@@ -1,5 +1,6 @@
 import React from "react";
 import BackgroundVideo from "../../components/BackgroundVideo";
+import FooterJoinButton from "../../components/FooterJoinButton";
 import Navbar from "../../components/Navbar";
 import VoteList from "../../components/VoteList";
 import "../../components/VoteList/VoteList.css";
@@ -19,8 +20,7 @@ const VotePage = ({ location }) => {
       <div class="footer-bar">
         <Navbar currentPage={location.pathname} />
       </div>
-
-      {/* Required on site to be listed */}
+      <FooterJoinButton />
     </>
   );
 };
