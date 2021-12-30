@@ -11,7 +11,6 @@ import "../../styles/hover.css";
 import "./Navbar.css";
 
 const Navbar = ({ currentPage }) => {
-  console.log(currentPage);
   return (
     <nav>
       {/* fa-custom fas fa-hand-holding-usd fa-5x hvr-pulse */}
@@ -41,7 +40,7 @@ const Navbar = ({ currentPage }) => {
         </a>
         <h2>Discord</h2>
       </div>
-      {currentPage !== "/vote" && (
+      {currentPage.indexOf("/vote") === -1 && (
         <div className="nav-item">
           {/* <Link to="/vote"> */}
           <Link to="#">
@@ -54,7 +53,7 @@ const Navbar = ({ currentPage }) => {
           <h2>Vote (WIP)</h2>
         </div>
       )}
-      {currentPage !== "/store" && currentPage !== "/store/premium" && (
+      {currentPage.indexOf("/store") === -1 && (
         <div className="nav-item">
           {/* <Link to="/store"> */}
           <Link to="#">

@@ -12,12 +12,12 @@ const VotePage = ({ location }) => {
       <BackgroundVideo />
       <div className="votelist-container">
         <h1>Voting Links</h1>
-        <div class="votelist-panel">
+        <div className="votelist-panel">
           <VoteList layoutData={VoteLinksJSON} />
         </div>
       </div>
 
-      <div class="footer-bar">
+      <div className="footer-bar">
         <Navbar currentPage={location.pathname} />
       </div>
       <FooterJoinButton />
