@@ -1,6 +1,5 @@
 import React from "react";
 import VoteLink from "./VoteLink";
-import "./VoteList.css";
 
 const VoteList = ({ layoutData }) => {
   return (

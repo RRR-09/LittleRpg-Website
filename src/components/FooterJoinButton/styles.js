@@ -1,16 +1,24 @@
-.copy-ip-container {
-  margin-top: 8px;
+import styled from "styled-components";
+export const CopyIPContainer = styled.div`
+  align-items: center;
+  color: #fff;
   display: flex;
+  flex-wrap: wrap;
   font-size: 21px;
-}
-.copy-ip-label {
+  justify-content: center;
+  margin-top: 8px;
+  padding-bottom: 16px;
+  text-align: center;
+  width: 100%;
+`;
+export const CopyIPLabel = styled.div`
   background-color: #434643;
   padding: 15px;
-}
-.copy-ip-label span {
-  color: #25c936;
-}
-.copy-ip {
+  & span {
+    color: #25c936;
+  }
+`;
+export const CopyIPBar = styled.div`
   background-color: #333533;
   cursor: pointer;
   padding: 15px;
@@ -24,14 +32,4 @@
   -webkit-user-select: none;
   -o-user-select: none;
   user-select: none;
-}
-.footer-copy-ip {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 16px;
-  color: #fff;
-  flex-wrap: wrap;
-  text-align: center;
-}
+`;

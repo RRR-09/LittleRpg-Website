@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./FooterJoinButton.css";
+import { CopyIPBar, CopyIPContainer, CopyIPLabel } from "./styles";
 
 const FooterJoinButton = () => {
   const [showNotification, setShowNotification] = useState(false);
@@ -11,27 +11,24 @@ const FooterJoinButton = () => {
     }, 5000);
   };
   return (
-    <div className="footer-copy-ip">
-      <div className="copy-ip-container">
-        <div className="copy-ip-label">
-          Join us at <span>play.jellycraft.net</span>!
-        </div>
+    <CopyIPContainer>
+      <CopyIPLabel>
+        Join us at <span>play.jellycraft.net</span>!
+      </CopyIPLabel>
 
-        {showNotification ? (
-          <div className="copy-ip">Copied!</div>
-        ) : (
-          <div
-            className="copy-ip"
-            onClick={toggleShow}
-            onKeyPress={toggleShow}
-            role="button"
-            tabIndex={0}
-          >
-            Copy IP
-          </div>
-        )}
-      </div>
-    </div>
+      {showNotification ? (
+        <CopyIPBar>Copied!</CopyIPBar>
+      ) : (
+        <CopyIPBar
+          onClick={toggleShow}
+          onKeyPress={toggleShow}
+          role="button"
+          tabIndex={0}
+        >
+          Copy IP
+        </CopyIPBar>
+      )}
+    </CopyIPContainer>
   );
 };
 export default FooterJoinButton;

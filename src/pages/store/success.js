@@ -3,9 +3,13 @@ import BackgroundVideo from "../../components/BackgroundVideo";
 import FooterJoinButton from "../../components/FooterJoinButton";
 import Navbar from "../../components/Navbar";
 import ProductCard from "../../components/Store/ProductCard";
-import { BackgroundCard } from "../../components/Store/styles-grid";
+import {
+  BackgroundCard,
+  StoreHeader,
+  StoreNote,
+} from "../../components/Store/styles-grid";
 import StoreLookupJSON from "../../content/store_lookup.json";
-import "../../styles/styles.css";
+import { Wrapper } from "../../styles/styles";
 
 const PurchaseSuccessPage = ({ location }) => {
   const [purchasedItem, setPurchasedItem] = useState(StoreLookupJSON.Error);
@@ -23,18 +27,18 @@ const PurchaseSuccessPage = ({ location }) => {
         }
       }
     }
-  }, []);
+  }, [location.search]);
   return (
     <>
       <BackgroundVideo />
-      <div id="wrapper">
-        <div id="store-header">
+      <Wrapper>
+        <StoreHeader>
           <h1>Purchase Success</h1>
           <h2>You have purchased:</h2>
-        </div>
+        </StoreHeader>
         <BackgroundCard>
           {purchasedItem.friendly_name === "ERROR" ? (
-            <div style={{ marginBottom: "24px" }}>
+            <StoreNote>
               <h2>UNKNOWN ITEM</h2>
               <code>{JSON.stringify(purchasedItem)}</code>
               <h3>
@@ -54,20 +58,20 @@ const PurchaseSuccessPage = ({ location }) => {
                   Contact any staff member on our Discord with the screenshot
                 </li>
               </ol>
-            </div>
+            </StoreNote>
           ) : (
             <>
               <ProductCard item={purchasedItem} />
-              <div style={{ marginBottom: "24px" }}>
+              <StoreNote>
                 <h2>
                   Please notify staff if your items are not given within 5
                   minutes!
                 </h2>
-              </div>
+              </StoreNote>
             </>
           )}
         </BackgroundCard>
-      </div>
+      </Wrapper>
       <Navbar currentPage={location.pathname} />
       <FooterJoinButton />
     </>

@@ -3,7 +3,6 @@ import BackgroundVideo from "../components/BackgroundVideo";
 import FooterJoinButton from "../components/FooterJoinButton";
 import Navbar from "../components/Navbar";
 import { BackgroundCard } from "../components/Store/styles-grid";
-import "../styles/styles.css";
 const NotFoundPage = ({ location }) => {
   return (
     <main>

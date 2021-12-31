@@ -7,68 +7,50 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "gatsby";
 import React from "react";
-import "../../styles/hover.css";
-import "./Navbar.css";
+import { NavContainer, NavItem } from "./styles.js";
 
 const Navbar = ({ currentPage }) => {
   return (
-    <div className="nav-container">
+    <NavContainer>
       <nav>
-        {/* fa-custom fas fa-hand-holding-usd fa-5x hvr-pulse */}
         {currentPage !== "/" && (
-          <div className="nav-item">
+          <NavItem>
             <Link to="/">
-              <FontAwesomeIcon
-                icon={faHome}
-                size="5x"
-                className="fa-shadow fa-responsive-size hvr-pulse"
-              />
+              <FontAwesomeIcon icon={faHome} size="5x" />
             </Link>
             <h2>Home</h2>
-          </div>
+          </NavItem>
         )}
-        <div className="nav-item">
+        <NavItem>
           <a
             href="https://discord.gg/3EavG3zXsy"
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon
-              icon={faDiscord}
-              size="5x"
-              className="fa-shadow fa-responsive-size hvr-pulse"
-            />
+            <FontAwesomeIcon icon={faDiscord} size="5x" />
           </a>
           <h2>Discord</h2>
-        </div>
+        </NavItem>
         {currentPage.indexOf("/vote") === -1 && (
-          <div className="nav-item">
+          <NavItem>
             {/* <Link to="/vote"> */}
             <Link to="#">
-              <FontAwesomeIcon
-                icon={faVoteYea}
-                size="5x"
-                className="fa-shadow fa-responsive-size hvr-pulse"
-              />
+              <FontAwesomeIcon icon={faVoteYea} size="5x" />
             </Link>
             <h2>Vote (WIP)</h2>
-          </div>
+          </NavItem>
         )}
         {currentPage.indexOf("/store") === -1 && (
-          <div className="nav-item">
+          <NavItem>
             {/* <Link to="/store"> */}
             <Link to="#">
-              <FontAwesomeIcon
-                icon={faHandHoldingUsd}
-                size="5x"
-                className="fa-shadow fa-responsive-size hvr-pulse"
-              />
+              <FontAwesomeIcon icon={faHandHoldingUsd} size="5x" />
             </Link>
             <h2>Store (WIP)</h2>
-          </div>
+          </NavItem>
         )}
       </nav>
-    </div>
+    </NavContainer>
   );
 };
 export default Navbar;

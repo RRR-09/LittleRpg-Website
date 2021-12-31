@@ -8,8 +8,10 @@ import {
   Row,
   StoreButton,
   StoreButtonContainer,
+  StoreHeader,
+  StoreNote,
 } from "../../components/Store/styles-grid";
-import "../../styles/styles.css";
+import { Wrapper } from "../../styles/styles";
 
 const PurchasePage = ({ location }) => {
   const locationState = location?.state ?? {};
@@ -59,14 +61,14 @@ const PurchasePage = ({ location }) => {
         </form>
       </div>
 
-      <div id="wrapper">
-        <div id="store-header">
+      <Wrapper>
+        <StoreHeader>
           <h1>Purchase Confirmation</h1>
           <h2>You are purchasing:</h2>
-        </div>
+        </StoreHeader>
         <BackgroundCard>
           <ProductCard item={locationState?.item ?? ""} />
-          <div style={{ marginBottom: "24px" }}>
+          <StoreNote>
             <h2>Please enter your Minecraft username:</h2>
             <input
               type="text"
@@ -74,10 +76,9 @@ const PurchasePage = ({ location }) => {
               maxLength="200"
               required="required"
               onChange={handleChange}
-              style={{ width: "100%", fontSize: "24px" }}
               ref={reactInputUsername}
             />
-          </div>
+          </StoreNote>
         </BackgroundCard>
         <Row>
           <Column size={2}>
@@ -95,7 +96,7 @@ const PurchasePage = ({ location }) => {
             </StoreButtonContainer>
           </Column>
         </Row>
-      </div>
+      </Wrapper>
     </>
   );
 };

@@ -1,15 +1,12 @@
 import React from "react";
 import logo from "../../assets/logo.webp";
-import "./Logo.css";
+import { LogoContainer } from "./styles";
+
 const Logo = () => (
-  <div id="logo-container">
+  <LogoContainer>
     <h1>
-      <img
-        src={logo}
-        className="logo"
-        alt="JellyCraft | A Minecraft Survival Community"
-      />
+      <img src={logo} alt="Logo" />
     </h1>
-  </div>
+  </LogoContainer>
 );
 export default Logo;

@@ -210,10 +210,30 @@ export const DescriptorBody = styled.div`
     margin-bottom: 0.25em;
   }
 `;
-
-// .bundle-info-container{
-// }
-// .bundle-info-text {
-//   margin-top:0px;
-//   margin-bottom:0px;
-// }
+export const StoreHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1vh;
+  & h1, & h2 {
+    margin: 0.5vh 0;
+    text-shadow: 2px 2px 4px #000000;
+    color: #eee;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+  }
+  & h1 {
+    font-size: 3em;
+  }
+  & h2 {
+    font-size: 1.75em;
+  }
+}`;
+export const StoreNote = styled.div`
+  margin-bottom: 24px;
+  & input {
+    width: 100%; 
+    font-size: 24px;
+  }
+}`;
