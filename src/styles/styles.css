@@ -1,11 +1,37 @@
 #wrapper {
-  align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
+  flex-direction: column;
   min-height: 100%;
   width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media only screen and (min-width: 576px) {
+  #wrapper {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #wrapper {
+    max-width: 720px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #wrapper {
+    max-width: 960px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #wrapper {
+    max-width: 1140px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #wrapper {
+    max-width: 1320px;
+  }
 }
 
 #wrapper a {
@@ -25,10 +51,31 @@ p {
   margin-block-end: 0px;
 }
 
-/* Desktop */
-#content {
-  width: 40vw;
+#store-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1vh;
 }
+#store-header h1,
+h2 {
+  margin: 0.5vh 0;
+  text-shadow: 2px 2px 4px #000000;
+  color: #eee;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+#store-header h1 {
+  font-size: 3em;
+}
+#store-header h2 {
+  font-size: 1.75em;
+}
+/* Desktop */
+/* #content {
+  width: 40vw;
+} */
 
 /* Mid-sized devices */
 /* @media (max-width: 1000px) {

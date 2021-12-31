@@ -1,49 +1,62 @@
 {
-    "crates": [
-        [
-            {
-                "items_in_row": 3,
-                "items": [
-                    "Fortune3",
-                    "Fortune6",
-                    "Fortune10"
-                ]
-            },
-            {
-                "items_in_row": 3,
-                "items": [
-                    "Magic3",
-                    "Magic6",
-                    "Magic10"
-                ]
-            },
-            {
-                "items_in_row": 3,
-                "items": [
-                    "Legendary3",
-                    "Legendary6",
-                    "Legendary10"
-                ]
-            },
-            {
-                "items_in_row": 3,
-                "items": [
-                    "Spawner3",
-                    "Spawner6",
-                    "Spawner10"
-                ]
-            }
+  "default": [
+    [
+      {
+        "items": [
+          {
+            "name": "Membership_1Month",
+            "view_only": true,
+            "real_url": "premium"
+          },
+          {
+            "name": "Membership_Permanent",
+            "view_only": true,
+            "real_url": "premium"
+          }
         ]
-    ],
-    "membership": [
-        [
-            {
-                "items_in_row": 2,
-                "items": [
-                    "Membership_1Month",
-                    "Membership_Permanent"
-                ]
-            }
+      },
+      {
+        "items": [
+          { "name": "Fortune3" },
+          { "name": "Fortune6" },
+          { "name": "Fortune10" }
         ]
+      },
+      {
+        "items": [
+          { "name": "Magic3" },
+          { "name": "Magic6" },
+          { "name": "Magic10" }
+        ]
+      },
+      {
+        "items": [
+          { "name": "Legendary3" },
+          { "name": "Legendary6" },
+          { "name": "Legendary10" }
+        ]
+      },
+      {
+        "items": [
+          { "name": "Spawner3" },
+          { "name": "Spawner6" },
+          { "name": "Spawner10" }
+        ]
+      }
     ]
+  ],
+  "membership": [
+    [
+      {
+        "items": [
+          {
+            "name": "Membership_1Month"
+          },
+          {
+            "name": "Membership_Permanent"
+          }
+        ]
+      }
+    ]
+  ]
 }

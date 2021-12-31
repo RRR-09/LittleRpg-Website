@@ -1,8 +1,12 @@
 nav {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+.nav-container {
+  max-width: 50em;
+  margin: 0 auto;
 }
 
 .nav-item {
@@ -47,51 +51,13 @@ nav {
   }
 }
 
-/* Content width on desktop */
-#content {
-  width: 700px;
-}
-
-/* Logo width on desktop */
-.logo {
-  width: 520px;
-}
-
 @media (max-width: 1000px) {
-  /* Content width on mid-sized devices */
-  #content {
-    width: 70%;
-  }
-  .custom-container {
-    width: 70%;
-  }
-
-  /* Logo width on mid-sized devices */
-  .logo {
-    width: 100%;
-  }
-
-  /* Navigation items width on mid-sized devices */
   .nav-item {
     width: 25%;
   }
 }
 
 @media (max-width: 500px) {
-  /* Content width on mobile */
-  #content {
-    width: 95%;
-  }
-  .custom-container {
-    width: 95%;
-  }
-
-  /* Logo width on mid-sized devices */
-  .logo {
-    width: 100%;
-  }
-
-  /* Navigation items width on mid-sized devices */
   .nav-item {
     width: 25%;
   }

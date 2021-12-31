@@ -12,61 +12,63 @@ import "./Navbar.css";
 
 const Navbar = ({ currentPage }) => {
   return (
-    <nav>
-      {/* fa-custom fas fa-hand-holding-usd fa-5x hvr-pulse */}
-      {currentPage !== "/" && (
+    <div className="nav-container">
+      <nav>
+        {/* fa-custom fas fa-hand-holding-usd fa-5x hvr-pulse */}
+        {currentPage !== "/" && (
+          <div className="nav-item">
+            <Link to="/">
+              <FontAwesomeIcon
+                icon={faHome}
+                size="5x"
+                className="fa-shadow fa-responsive-size hvr-pulse"
+              />
+            </Link>
+            <h2>Home</h2>
+          </div>
+        )}
         <div className="nav-item">
-          <Link to="/">
+          <a
+            href="https://discord.gg/3EavG3zXsy"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon
-              icon={faHome}
+              icon={faDiscord}
               size="5x"
               className="fa-shadow fa-responsive-size hvr-pulse"
             />
-          </Link>
-          <h2>Home</h2>
+          </a>
+          <h2>Discord</h2>
         </div>
-      )}
-      <div className="nav-item">
-        <a
-          href="https://discord.gg/3EavG3zXsy"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faDiscord}
-            size="5x"
-            className="fa-shadow fa-responsive-size hvr-pulse"
-          />
-        </a>
-        <h2>Discord</h2>
-      </div>
-      {currentPage.indexOf("/vote") === -1 && (
-        <div className="nav-item">
-          {/* <Link to="/vote"> */}
-          <Link to="#">
-            <FontAwesomeIcon
-              icon={faVoteYea}
-              size="5x"
-              className="fa-shadow fa-responsive-size hvr-pulse"
-            />
-          </Link>
-          <h2>Vote (WIP)</h2>
-        </div>
-      )}
-      {currentPage.indexOf("/store") === -1 && (
-        <div className="nav-item">
-          {/* <Link to="/store"> */}
-          <Link to="#">
-            <FontAwesomeIcon
-              icon={faHandHoldingUsd}
-              size="5x"
-              className="fa-shadow fa-responsive-size hvr-pulse"
-            />
-          </Link>
-          <h2>Store (WIP)</h2>
-        </div>
-      )}
-    </nav>
+        {currentPage.indexOf("/vote") === -1 && (
+          <div className="nav-item">
+            {/* <Link to="/vote"> */}
+            <Link to="#">
+              <FontAwesomeIcon
+                icon={faVoteYea}
+                size="5x"
+                className="fa-shadow fa-responsive-size hvr-pulse"
+              />
+            </Link>
+            <h2>Vote (WIP)</h2>
+          </div>
+        )}
+        {currentPage.indexOf("/store") === -1 && (
+          <div className="nav-item">
+            {/* <Link to="/store"> */}
+            <Link to="#">
+              <FontAwesomeIcon
+                icon={faHandHoldingUsd}
+                size="5x"
+                className="fa-shadow fa-responsive-size hvr-pulse"
+              />
+            </Link>
+            <h2>Store (WIP)</h2>
+          </div>
+        )}
+      </nav>
+    </div>
   );
 };
 export default Navbar;
