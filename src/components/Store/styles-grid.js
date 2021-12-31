@@ -162,6 +162,55 @@ export const RowMessage = styled.div`
   font-weight: bold;
 `;
 
+export const DescriptorBody = styled.div`
+  border: 2px solid #333533;
+  font-size: 21px;
+  width: 100%;
+  background-color: rgba(51, 53, 51, 0.7);
+  padding: 15px;
+  color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  & p {
+    margin-top: 0px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0px 0px 0px #000000;
+    margin-bottom: 2em;
+  }
+  & div {
+    padding-top: 3em;
+  }
+  & div:last-of-type {
+    padding-bottom: 3em;
+  }
+  & h2 {
+    font-size: 1.7em;
+  }
+  & h3 {
+    font-size: 1.75em;
+  }
+  & h5 {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  & h3,
+  h5 {
+    margin-top: 0px;
+    margin-bottom: 0.25em;
+  }
+`;
+
 // .bundle-info-container{
 // }
 // .bundle-info-text {

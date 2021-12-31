@@ -1,15 +1,28 @@
-// Step 1: Import React
-import * as React from 'react'
+import React from "react";
+import BackgroundVideo from "../../components/BackgroundVideo";
+import FooterJoinButton from "../../components/FooterJoinButton";
+import MonthlyGoal from "../../components/MonthlyGoal/MonthlyGoal";
+import Navbar from "../../components/Navbar";
+import PurchaseListing from "../../components/Store";
+import StoreLayoutJSON from "../../content/store_layout.json";
 
-// Step 2: Define your component
-const PremiumStore = () => {
-    return (
-        <main>
-            <title>Store (Premium)</title>
-            <h1>Store (Premium)</h1>
-        </main>
-    )
-}
+const StorePremiumPage = ({ location }) => {
+  return (
+    <>
+      <BackgroundVideo />
+      <div id="wrapper">
+        <div id="store-header">
+          <h1>Store</h1>
+          <h2>Your support keeps us going!</h2>
+        </div>
+        <MonthlyGoal />
+        <PurchaseListing layoutData={StoreLayoutJSON.premium} />
+      </div>
 
-// Step 3: Export your component
-export default PremiumStore
+      {/* <ChargebackWarning /> */}
+      <Navbar currentPage={location.pathname} />
+      <FooterJoinButton />
+    </>
+  );
+};
+export default StorePremiumPage;

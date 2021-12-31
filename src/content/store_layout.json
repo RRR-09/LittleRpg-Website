@@ -48,8 +48,71 @@
       }
     ]
   ],
-  "membership": [
+  "premium": [
     [
+      {
+        "descriptor": [
+          {
+            "name": "UTILITY FEATURES",
+            "points": [
+              {
+                "heading": "50% Bonus Skills XP",
+                "subtext": "Progress up the skill tree 50% faster!"
+              },
+              {
+                "heading": "50% Bonus Job Pay & XP",
+                "subtext": "Earn 50% more money and job xp!"
+              },
+              {
+                "heading": "Fly in Claims",
+                "subtext": "/fly Free flight and no fall damage while in the borders of your own claims!"
+              },
+              {
+                "heading": "Bottle Experience Points",
+                "subtext": "Convert all your exp into bottles with a single command!"
+              },
+              {
+                "heading": "Instant Access Commands",
+                "subtext": "Anvil, grindstone, cartographytable, loom, smithingtable, and stonecutter!"
+              },
+              {
+                "heading": "Set Pwarp Icons",
+                "subtext": "Make your pwarp stand out with custom icons!"
+              }
+            ]
+          },
+          {
+            "name": "COSMETIC FEATURES",
+            "points": [
+              {
+                "heading": "Nickname & Prefix",
+                "subtext": "/nickname Customize your title with a premium prefix and nickname with hex codes!"
+              },
+              {
+                "heading": "Particle Trails",
+                "subtext": "Deck yourself out with this super over-the-top status symbol. Leave a trail everywhere you go, you'll turn heads with this effect."
+              },
+              {
+                "heading": "Hide Armor",
+                "subtext": "/togglearmor Show off your skin without leaving yourself vulnerable!"
+              },
+              {
+                "heading": "Toy Commands",
+                "subtext": "/hat /ride /beezooka /kittycannon"
+              }
+            ]
+          },
+          {
+            "name": "DISCORD FEATURES",
+            "points": [
+              {
+                "heading": "Premium Role",
+                "subtext": "Allows you to send messages to players on Minecraft through the #in-game channel!"
+              }
+            ]
+          }
+        ]
+      },
       {
         "items": [
           {
