@@ -158,3 +158,21 @@ export const PurchaseButtonInput = styled.button`
   width: 100%;
   height: 11vh;
 `;
+
+export const RowMessage = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1em;
+  font-size: 21px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+`;
+
+// .bundle-info-container{
+// }
+// .bundle-info-text {
+//   margin-top:0px;
+//   margin-bottom:0px;
+// }
