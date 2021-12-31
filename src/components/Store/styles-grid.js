@@ -9,14 +9,6 @@ export const Pictures = {
   heroes_aquatic: img_heroes_aquatic,
 };
 
-const breakpoints = {
-  mobile: 400,
-  phablet: 550,
-  tablet: 750,
-  desktop: 1000,
-  hd: 1300,
-};
-
 const widths = {
   1: 12,
   2: 6,
