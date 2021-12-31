@@ -17,9 +17,7 @@ const VotePage = ({ location }) => {
         </div>
       </div>
 
-      <div className="footer-bar">
-        <Navbar currentPage={location.pathname} />
-      </div>
+      <Navbar currentPage={location.pathname} />
       <FooterJoinButton />
     </>
   );

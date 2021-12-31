@@ -6,6 +6,8 @@ nav {
 }
 .nav-container {
   max-width: 50em;
+  padding-top: 4em;
+  padding-bottom: 1em;
   margin: 0 auto;
 }
 

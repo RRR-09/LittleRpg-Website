@@ -1,9 +1,11 @@
 import React from "react";
 import BackgroundVideo from "../../components/BackgroundVideo";
+import FooterJoinButton from "../../components/FooterJoinButton";
 import MonthlyGoal from "../../components/MonthlyGoal/MonthlyGoal";
 import Navbar from "../../components/Navbar";
 import PurchaseListing from "../../components/Store";
 import StoreLayoutJSON from "../../content/store_layout.json";
+
 const StorePage = ({ location }) => {
   return (
     <>
@@ -17,8 +19,9 @@ const StorePage = ({ location }) => {
         <PurchaseListing layoutData={StoreLayoutJSON.default} />
       </div>
 
-      <Navbar currentPage={location.pathname} />
       {/* <ChargebackWarning /> */}
+      <Navbar currentPage={location.pathname} />
+      <FooterJoinButton />
     </>
   );
 };
