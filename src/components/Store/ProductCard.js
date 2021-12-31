@@ -12,11 +12,11 @@ const ProductCard = ({ item }) => {
   return (
     <ProductContainer>
       <ProductContainerCard>
-        <ProductImage src={Pictures[item.image]} alt={item.image} />
-        <ProductNameText itemColor={item.color}>
-          {item.friendly_name.startsWith("x")
-            ? "x" + item.friendly_name.slice(1).toUpperCase()
-            : item.friendly_name.toUpperCase()}
+        <ProductImage src={Pictures[item?.image]} alt={item?.image} />
+        <ProductNameText itemColor={item?.color}>
+          {item?.friendly_name?.startsWith("x")
+            ? "x" + item?.friendly_name?.slice(1).toUpperCase()
+            : item?.friendly_name?.toUpperCase()}
         </ProductNameText>
         <ProductPriceText>${item.price_usd} USD</ProductPriceText>
       </ProductContainerCard>
