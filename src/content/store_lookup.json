@@ -10,6 +10,13 @@
       "crazycrate give physical Fortune 1 {username}"
     ]
   },
+  "Error": {
+    "paypal_id": "N/A",
+    "friendly_name": "ERROR",
+    "color": "#ffffff",
+    "image": "ender_chest_open",
+    "price_usd": -1
+  },
   "Membership_1Month": {
     "paypal_id": "DPPVPMMSF3V5Y",
     "friendly_name": "1 Month Premium",
