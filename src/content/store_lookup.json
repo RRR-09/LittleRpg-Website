@@ -17,7 +17,7 @@
     "image": "ender_chest_open",
     "price_usd": -1
   },
-  "Membership_1Month": {
+  "Premium_1Month": {
     "paypal_id": "DPPVPMMSF3V5Y",
     "friendly_name": "1 Month Premium",
     "price_usd": 10,
@@ -25,7 +25,7 @@
     "image": "heroes_in_combat",
     "commands": ["lp user {username} parent addtemp member 30d"]
   },
-  "Membership_Permanent": {
+  "Premium_Permanent": {
     "paypal_id": "YFXC599AE9GMJ",
     "friendly_name": "Permanent Premium",
     "price_usd": 35,

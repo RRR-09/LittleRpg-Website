@@ -4,12 +4,12 @@
       {
         "items": [
           {
-            "name": "Membership_1Month",
+            "name": "Premium_1Month",
             "view_only": true,
             "real_url": "premium"
           },
           {
-            "name": "Membership_Permanent",
+            "name": "Premium_Permanent",
             "view_only": true,
             "real_url": "premium"
           }
@@ -116,10 +116,10 @@
       {
         "items": [
           {
-            "name": "Membership_1Month"
+            "name": "Premium_1Month"
           },
           {
-            "name": "Membership_Permanent"
+            "name": "Premium_Permanent"
           }
         ]
       }
