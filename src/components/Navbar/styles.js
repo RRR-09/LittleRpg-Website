@@ -41,13 +41,13 @@ export const NavItem = styled.div`
   }
   & svg {
     color: #61ac4c;
-    text-shadow: 2px 2px 2px #3b3b3b;
+    -webkit-filter: drop-shadow(3px 3px 2px rgba(0.23, 0.23, 0.23, 0.5));
+    filter: drop-shadow(3px 3px 2px rgba(0.23, 0.23, 0.23, 0.5));
     /*Pulse*/
       display: inline-block;
       vertical-align: middle;
       -webkit-transform: perspective(1px) translateZ(0);
       transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   }
   & svg:active, & svg:focus, & svg:hover {
       animation: ${pulse} 1s linear infinite;
