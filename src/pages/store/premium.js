@@ -1,5 +1,6 @@
 import React from "react";
 import BackgroundVideo from "../../components/BackgroundVideo";
+import ChargebackWarning from "../../components/ChargebackWarning";
 import FooterJoinButton from "../../components/FooterJoinButton";
 import MonthlyGoal from "../../components/MonthlyGoal/MonthlyGoal";
 import Navbar from "../../components/Navbar";
@@ -21,7 +22,7 @@ const StorePremiumPage = ({ location }) => {
         <PurchaseListing layoutData={StoreLayoutJSON.premium} />
       </Wrapper>
 
-      {/* <ChargebackWarning /> */}
+      <ChargebackWarning />
       <Navbar currentPage={location.pathname} />
       <FooterJoinButton />
     </>

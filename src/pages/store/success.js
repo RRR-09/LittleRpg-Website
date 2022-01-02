@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BackgroundVideo from "../../components/BackgroundVideo";
+import ChargebackWarning from "../../components/ChargebackWarning";
 import FooterJoinButton from "../../components/FooterJoinButton";
 import Navbar from "../../components/Navbar";
 import ProductCard from "../../components/Store/ProductCard";
@@ -72,6 +73,7 @@ const PurchaseSuccessPage = ({ location }) => {
           )}
         </BackgroundCard>
       </Wrapper>
+      <ChargebackWarning />
       <Navbar currentPage={location.pathname} />
       <FooterJoinButton />
     </>
