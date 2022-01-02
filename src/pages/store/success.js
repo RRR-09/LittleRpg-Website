@@ -10,7 +10,7 @@ import {
   StoreNote,
 } from "../../components/Store/styles-grid";
 import StoreLookupJSON from "../../content/store_lookup.json";
-import { Wrapper } from "../../styles/styles";
+import { CodeBlock, Wrapper } from "../../styles/styles";
 
 const PurchaseSuccessPage = ({ location }) => {
   const [purchasedItem, setPurchasedItem] = useState(StoreLookupJSON.Error);
@@ -41,7 +41,7 @@ const PurchaseSuccessPage = ({ location }) => {
           {purchasedItem.friendly_name === "ERROR" ? (
             <StoreNote>
               <h2>UNKNOWN ITEM</h2>
-              <code>{JSON.stringify(purchasedItem)}</code>
+              <CodeBlock>{JSON.stringify(purchasedItem)}</CodeBlock>
               <h3>
                 If you have just come from a PayPal purchase, something has gone
                 wrong! Please,
@@ -49,7 +49,8 @@ const PurchaseSuccessPage = ({ location }) => {
               <ol>
                 <li>
                   Take a screenshot of this page, including the url (should
-                  contain '<code>/store/success?purchased_item=...</code>')
+                  contain '
+                  <CodeBlock>/store/success?purchased_item=...</CodeBlock>')
                 </li>
                 <li>
                   Check your email and verify the PayPal transaction went

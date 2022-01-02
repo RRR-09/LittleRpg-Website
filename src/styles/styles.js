@@ -26,3 +26,10 @@ export const Wrapper = styled.div`
     color: #61ac4c;
   }
 `;
+
+export const CodeBlock = styled.div`
+  font-family: Consolas;
+  display: inline;
+  background-color: rgba(0, 0, 0, 0.25);
+  word-break: break-all;
+`;
