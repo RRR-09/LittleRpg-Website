@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { CopyIPBar, CopyIPContainer, CopyIPLabel } from "./styles";
 
 const FooterJoinButton = () => {
+  const ipAddr = "play.littlerpg.net";
   const [showNotification, setShowNotification] = useState(false);
   const toggleShow = () => {
-    navigator.clipboard.writeText("play.littlerpg.net");
+    navigator.clipboard.writeText(ipAddr);
     setShowNotification(true);
     setTimeout(function () {
       setShowNotification(false);
@@ -13,7 +14,7 @@ const FooterJoinButton = () => {
   return (
     <CopyIPContainer>
       <CopyIPLabel>
-        Join us at <span>play.jellycraft.net</span>!
+        Join us at <span>{ipAddr}</span>!
       </CopyIPLabel>
 
       {showNotification ? (
