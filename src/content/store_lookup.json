@@ -1,9 +1,9 @@
 {
-  "Test3": {
-    "paypal_id": "NA",
-    "friendly_name": "Test Keys",
+  "TestItem": {
+    "paypal_id": "LKAZ4C96WT6DW",
+    "friendly_name": "Developer Test Item",
     "color": "#ffffff",
-    "image": "test",
+    "image": "ender_chest_open",
     "price_usd": 0.01,
     "commands": [
       "crazycrate give physical Fortune 1 {username}",
@@ -15,7 +15,8 @@
     "friendly_name": "ERROR",
     "color": "#ffffff",
     "image": "ender_chest_open",
-    "price_usd": -1
+    "price_usd": -1,
+    "commands": []
   },
   "Premium_1Month": {
     "paypal_id": "DPPVPMMSF3V5Y",
