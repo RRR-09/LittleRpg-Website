@@ -20,7 +20,6 @@ const PurchaseSuccessPage = ({ location }) => {
       const purchasedItemCode = urlParams.get("purchased_item");
       if (purchasedItemCode) {
         for (let [key, data] of Object.entries(StoreLookupJSON)) {
-          console.log(key, data);
           if (data.paypal_id === purchasedItemCode) {
             setPurchasedItem(data);
             break;
