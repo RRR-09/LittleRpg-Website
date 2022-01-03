@@ -25,10 +25,11 @@
     "color": "#f04eff",
     "image": "heroes_in_combat",
     "commands": ["lp user {username} parent addtemp member 30d"],
-    "discord_role": {
-      "name": "premium",
-      "duration_days": 30
-    }
+    "discord_roles": [
+      { "add": true, "name": "premium", "duration_days": 30 },
+      { "add": false, "name": "player", "duration_days": 30 },
+      { "add": false, "name": "guest", "duration_days": 30 }
+    ]
   },
   "Premium_Permanent": {
     "paypal_id": "YFXC599AE9GMJ",
@@ -37,10 +38,11 @@
     "color": "#f04eff",
     "image": "heroes_aquatic",
     "commands": ["lp user {username} parent add member"],
-    "discord_role": {
-      "name": "premium",
-      "duration_days": -1
-    }
+    "discord_roles": [
+      { "add": true, "name": "premium", "duration_days": -1 },
+      { "add": false, "name": "player", "duration_days": -1 },
+      { "add": false, "name": "guest", "duration_days": -1 }
+    ]
   },
   "Fortune3": {
     "paypal_id": "J5H62GZ73JB2Y",
