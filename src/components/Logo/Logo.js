@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/logo.webp";
+import logo from "../../assets/logo2.png";
 import { LogoContainer } from "./styles";
 
 const Logo = () => (
