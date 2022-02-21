@@ -31,7 +31,7 @@ export const LogoContainer = styled.div`
     justify-content: center;
   }
   & h1 img {
-    width: 25vw;
+    width: 32vw;
     min-width: 6em;
     @media (max-width: 768px) {
       max-width: 60vw;
