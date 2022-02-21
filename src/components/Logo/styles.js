@@ -34,7 +34,7 @@ export const LogoContainer = styled.div`
     width: 32vw;
     min-width: 6em;
     @media (max-width: 768px) {
-      max-width: 60vw;
+      width: 10em;
     }
   }
   & img {

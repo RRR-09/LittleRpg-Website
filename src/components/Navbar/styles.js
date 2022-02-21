@@ -1,9 +1,15 @@
 import styled, { keyframes } from "styled-components";
 export const NavContainer = styled.div`
-  max-width: 50em;
+  max-width: 43vw;
   padding-top: 4em;
   padding-bottom: 1em;
-  margin: 0 auto;
+  margin: 0 0;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    width: 100%;
+  }
   width: 100%;
   & nav {
     display: flex;
