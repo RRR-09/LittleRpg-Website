@@ -1,21 +1,20 @@
 import styled, { keyframes } from "styled-components";
 export const NavContainer = styled.div`
-  max-width: 43vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   padding-top: 4em;
   padding-bottom: 1em;
-  margin: 0 0;
-  width: 100%;
-
-  @media (max-width: 768px) {
-    max-width: 100%;
-    width: 100%;
-  }
   width: 100%;
   & nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-evenly;
+    width: 60vw;
+    @media (max-width: 768px) {
+      max-width: 100%;
+      width: 100%;
+    }
   }
 `;
 const pulse = keyframes`
@@ -32,7 +31,6 @@ export const NavItem = styled.div`
   text-align: center;
   color: #eee;
   text-shadow: 2px 2px 4px #000000;
-  width: 22%;
   &,
   & a,
   & i {

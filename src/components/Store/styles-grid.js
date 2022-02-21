@@ -38,13 +38,25 @@ export const RowCollection = styled.div`
 export const BackgroundContainer = styled.div``;
 export const Column = styled.div`
   grid-column: span ${(props) => widths[props.size] || 12};
+
+  @media (max-width: 992px) {
+    grid-column: span 12;
+  }
   justify-self: stretch;
 
   &:not(:first-child) div${BackgroundContainer} {
     padding-left: 12px;
+    @media (max-width: 992px) {
+      padding-left: 0px;
+      padding-top: 12px;
+    }
   }
   &:not(:last-child) div${BackgroundContainer} {
     padding-right: 12px;
+    @media (max-width: 992px) {
+      padding-right: 0px;
+      padding-bottom: 12px;
+    }
   }
 `;
 
@@ -66,6 +78,18 @@ export const BackgroundCard = styled.div`
 
 export const ProductContainer = styled.div`
   font-size: 30px;
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
+  @media (min-width: 992px) {
+    font-size: 23px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 27px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 30px;
+  }
   padding-left: 24px;
   padding-right: 24px;
   width: 100%;
