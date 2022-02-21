@@ -8,11 +8,22 @@ const HomePage = ({ location }) => {
   return (
     <>
       <BackgroundVideo />
-      <Wrapper>
-        <Logo />
-      </Wrapper>
-      <Navbar currentPage={location.pathname} />
-      <FooterJoinButton />
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100%",
+          width: "100%",
+          flexDirection: "column",
+        }}
+      >
+        <Wrapper>
+          <Logo />
+        </Wrapper>
+        <Navbar currentPage={location.pathname} />
+        <FooterJoinButton />
+      </div>
     </>
   );
 };
