@@ -57,27 +57,27 @@
             "points": [
               {
                 "heading": "50% Bonus Skills XP",
-                "subtext": "Progress up the skill tree 50% faster!"
+                "subtext": "Progress up the skill tree 50% faster."
               },
               {
                 "heading": "50% Bonus Job Pay & XP",
-                "subtext": "Earn 50% more money and job xp!"
+                "subtext": "Earn 50% more money and job xp."
               },
               {
                 "heading": "Fly in Claims",
-                "subtext": "/fly Free flight and no fall damage while in the borders of your own claims!"
+                "subtext": "/fly Free flight and no fall damage while in the borders of your own claims."
               },
               {
                 "heading": "Bottle Experience Points",
-                "subtext": "Convert all your exp into bottles with a single command!"
+                "subtext": "Convert all your exp into bottles with a single command."
               },
               {
                 "heading": "Instant Access Commands",
-                "subtext": "Anvil, grindstone, cartographytable, loom, smithingtable, and stonecutter!"
+                "subtext": "Anvil, grindstone, cartographytable, loom, smithingtable, and stonecutter."
               },
               {
                 "heading": "Set Pwarp Icons",
-                "subtext": "Make your pwarp stand out with custom icons!"
+                "subtext": "Make your pwarp stand out with custom icons."
               }
             ]
           },
@@ -86,7 +86,7 @@
             "points": [
               {
                 "heading": "Nickname & Prefix",
-                "subtext": "/nickname Customize your title with a premium prefix and nickname with hex codes!"
+                "subtext": "/nickname Customize your title with a premium prefix and nickname with hex codes."
               },
               {
                 "heading": "Particle Trails",
@@ -94,7 +94,7 @@
               },
               {
                 "heading": "Hide Armor",
-                "subtext": "/togglearmor Show off your skin without leaving yourself vulnerable!"
+                "subtext": "/togglearmor Show off your skin without leaving yourself vulnerable."
               },
               {
                 "heading": "Toy Commands",
@@ -107,7 +107,7 @@
             "points": [
               {
                 "heading": "Premium Role",
-                "subtext": "Allows you to send messages to players on Minecraft through the #in-game channel!"
+                "subtext": "Allows you to send messages to players on Minecraft through the #in-game channel."
               }
             ]
           }
