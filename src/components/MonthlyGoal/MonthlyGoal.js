@@ -1,9 +1,19 @@
+import { graphql, useStaticQuery } from "gatsby";
 import React, { useState } from "react";
 import styled from "styled-components";
 import { ProgressContainer, ProgressLabel, Row } from "./styles";
 
 const MonthlyGoal = () => {
-  const [progress, setProgress] = useState(0);
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      donationsGoalPercentage {
+        percentage
+      }
+    }
+  `);
+  const [progress, setProgress] = useState(
+    data?.donationsGoalPercentage?.percentage || 0
+  );
 
   const Progress = styled.div`
     width: ${progress}%;
