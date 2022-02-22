@@ -8,6 +8,11 @@
     "commands": [
       "crazycrate give physical Fortune 1 {username}",
       "crazycrate give physical Fortune 1 {username}"
+    ],
+    "discord_roles": [
+      { "add": true, "name": "premium", "duration_days": 1 },
+      { "add": false, "name": "player", "duration_days": 1 },
+      { "add": false, "name": "guest", "duration_days": 1 }
     ]
   },
   "Error": {
