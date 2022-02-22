@@ -33,20 +33,18 @@ const Navbar = ({ currentPage }) => {
         </NavItem>
         {currentPage.indexOf("/vote") === -1 && (
           <NavItem>
-            {/* <Link to="/vote"> */}
-            <Link to="#">
+            <Link to="/vote">
               <FontAwesomeIcon icon={faVoteYea} size="5x" />
             </Link>
-            <h2>Vote (WIP)</h2>
+            <h2>Vote</h2>
           </NavItem>
         )}
         {currentPage.indexOf("/store") === -1 && (
           <NavItem>
-            {/* <Link to="/store"> */}
-            <Link to="#">
+            <Link to="/store">
               <FontAwesomeIcon icon={faHandHoldingUsd} size="5x" />
             </Link>
-            <h2>Store (WIP)</h2>
+            <h2>Store</h2>
           </NavItem>
         )}
       </nav>
