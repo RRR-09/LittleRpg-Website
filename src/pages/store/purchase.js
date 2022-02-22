@@ -75,9 +75,7 @@ const PurchasePage = ({ location }) => {
             <Column size={2}>
               <StoreButtonContainer>
                 <Link to="/store">
-                  <StoreButton backgroundColor="red">
-                    Return to store
-                  </StoreButton>
+                  <StoreButton backgroundColor="red">Cancel</StoreButton>
                 </Link>
               </StoreButtonContainer>
             </Column>
