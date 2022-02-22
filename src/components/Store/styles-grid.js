@@ -137,7 +137,6 @@ export const StoreButton = styled.div`
     (props?.backgroundColor ?? false) || "#0fa71e"};
   padding: 0.5em 1em;
   font-size: 2.5em;
-  border: 1px solid black;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -148,7 +147,6 @@ export const CancelButton = styled.div`
     (props?.backgroundColor ?? false) || "#0fa71e"};
   padding: 0em 0em;
   font-size: 2.5em;
-  border: 1px solid black;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
