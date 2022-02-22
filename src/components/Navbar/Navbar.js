@@ -23,7 +23,7 @@ const Navbar = ({ currentPage }) => {
         )}
         <NavItem>
           <a
-            href="https://discord.gg/3EavG3zXsy"
+            href="https://discord.gg/2TyssdbTHH"
             target="_blank"
             rel="noreferrer"
           >
