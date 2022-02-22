@@ -189,9 +189,7 @@ export const RowMessage = styled.div`
 export const DescriptorBody = styled.div`
   border: 2px solid #333533;
   font-size: 21px;
-  width: 100%;
   background-color: rgba(51, 53, 51, 0.7);
-  padding: 15px;
   color: #fff;
   -webkit-user-select: none;
   -moz-user-select: none;
