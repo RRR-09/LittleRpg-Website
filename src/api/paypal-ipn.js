@@ -123,12 +123,12 @@ export default async function handler(req, res) {
   }
 
   // Don't allow test item outside development mode
-  // if (process.env.NODE_ENV !== "development" && item_code === "TestItem") {
-  //   await log_error(
-  //     `User "${user_name}" tried to buy the test item without being a developer!`
-  //   );
-  //   return;
-  // }
+  if (process.env.NODE_ENV !== "development" && item_code === "TestItem") {
+    await log_error(
+      `User "${user_name}" tried to buy the test item without being a developer!`
+    );
+    return;
+  }
 
   // Don't give any items if transaction couldn't be verified
   if (!verification.success) {
