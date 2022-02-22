@@ -14,7 +14,7 @@ const MonthlyGoal = () => {
     height: 24px;
 
     & label {
-      padding-left: ${progress > 1 ? "5px" : "0px"};
+      padding-left: ${progress > 5 ? "0px" : "5px"};
       font-size: 24px;
     }
   `;
