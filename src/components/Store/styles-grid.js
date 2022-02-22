@@ -82,13 +82,13 @@ export const ProductContainer = styled.div`
     font-size: 30px;
   }
   @media (min-width: 992px) {
-    font-size: 23px;
+    font-size: 21px;
   }
   @media (min-width: 1200px) {
-    font-size: 27px;
+    font-size: 24px;
   }
   @media (min-width: 1400px) {
-    font-size: 30px;
+    font-size: 29px;
   }
   padding-left: 24px;
   padding-right: 24px;
@@ -113,7 +113,7 @@ export const ProductNameText = styled.div`
   color: ${(props) => props.itemColor || "grey"};
   font-weight: 700;
   white-space: nowrap;
-  margin-top: 0.25em;
+  margin-top: 48px;
   margin-bottom: 0.25em;
   text-shadow: 2px 2px 1px #000000;
 `;
@@ -182,7 +182,6 @@ export const RowMessage = styled.div`
   font-size: 21px;
   color: #fff;
   text-shadow: 2px 2px 4px #000000;
-  font-family: "Lato", sans-serif;
   font-weight: bold;
 `;
 
@@ -221,6 +220,7 @@ export const DescriptorBody = styled.div`
   }
   & h3 {
     font-size: 1.75em;
+    font-family: "MinecraftTitle";
   }
   & h5 {
     font-size: 1em;
@@ -242,11 +242,11 @@ export const StoreHeader = styled.div`
     margin: 0.5vh 0;
     text-shadow: 2px 2px 4px #000000;
     color: #eee;
-    font-family: "Lato", sans-serif;
     font-weight: bold;
   }
   & h1 {
     font-size: 3em;
+    font-family: "MinecraftTitle";
   }
   & h2 {
     font-size: 1.75em;

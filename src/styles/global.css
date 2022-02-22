@@ -1,9 +1,18 @@
+@font-face {
+  font-family: "MinecraftRegular";
+  src: url("../assets/Minecraft.ttf");
+}
+@font-face {
+  font-family: "MinecraftTitle";
+  src: url("../assets/Minercraftory.ttf");
+}
+
 html,
 body {
   /* width: 100vw;
   padding: 0; */
   /* overflow-x: hidden; */
-  font-family: "Lato", sans-serif;
+  font-family: "MinecraftRegular";
   font-size: 18px;
   height: 100%;
   margin: 0;

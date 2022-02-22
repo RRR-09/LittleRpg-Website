@@ -8,17 +8,24 @@ const MonthlyGoal = () => {
   const Progress = styled.div`
     width: ${progress}%;
     transition: width 2s;
-    color: ${progress > 1 ? "#fff" : "#000"};
+    color: ${progress > 4 ? "#fff" : "#000"};
     background-color: #4caf50 !important;
     text-align: center !important;
     height: 24px;
+
+    & label {
+      padding-left: ${progress > 1 ? "5px" : "0px"};
+      font-size: 24px;
+    }
   `;
 
   return (
     <Row>
       <ProgressLabel>Monthly Goal Progress:</ProgressLabel>
       <ProgressContainer>
-        <Progress>0%</Progress>
+        <Progress>
+          <label>{progress}%</label>
+        </Progress>
       </ProgressContainer>
     </Row>
   );

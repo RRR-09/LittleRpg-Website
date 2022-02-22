@@ -11,7 +11,6 @@ export const ProgressLabel = styled.label`
   display: block;
   text-shadow: 2px 2px 4px #000000;
   color: #eee;
-  font-family: "Lato", sans-serif;
   font-weight: bold;
   display: block;
   font-size: 21px;
