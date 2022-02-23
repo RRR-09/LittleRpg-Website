@@ -112,7 +112,7 @@ export default async function handler(req, res) {
   // Datacheck
   if (
     currency === "N/A" ||
-    gross === -1 ||
+    total === -1 ||
     user_name === "N/A" ||
     item_code == "Error"
   ) {
@@ -120,6 +120,8 @@ export default async function handler(req, res) {
       `[DATA ERROR] One or more fields in the transaction failed to process.\n
       currency: ${currency}\n
       gross: ${gross}\n
+      fee: ${fee}\n
+      total: ${total}\n
       user_name: ${user_name}\n
       item_code: ${item_code}\n
       Body: \n${JSON.stringify(data)}`
