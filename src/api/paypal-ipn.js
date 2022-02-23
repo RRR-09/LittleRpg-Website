@@ -98,7 +98,12 @@ export default async function handler(req, res) {
 
   console.log(`Verifying IPN: ${JSON.stringify(data)}`);
   const currency = data.mc_currency ?? "N/A";
-  const gross = data.mc_fee ?? -1;
+
+  // Documentation is inconsistent; it seems 'gross' and 'fee' swap sometimes. Keeping both.
+  const gross = data.mc_gross ?? -1;
+  const fee = data.mc_fee ?? -1;
+  const total = Math.max(gross, fee);
+
   const user_name = data.option_selection1 ?? "N/A";
   const item_code = data.item_number ?? "Error";
 
@@ -153,6 +158,8 @@ export default async function handler(req, res) {
     item: item,
     currency: currency,
     gross: gross,
+    fee: fee,
+    total: total,
     user_name: user_name,
     item_code: item_code,
   });
