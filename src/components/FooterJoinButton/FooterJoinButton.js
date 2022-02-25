@@ -12,24 +12,34 @@ const FooterJoinButton = () => {
     }, 5000);
   };
   return (
-    <CopyIPContainer>
-      <CopyIPLabel>
-        Join us at <span>{ipAddr}</span>!
-      </CopyIPLabel>
-
-      {showNotification ? (
-        <CopyIPBar>Copied!</CopyIPBar>
-      ) : (
-        <CopyIPBar
-          onClick={toggleShow}
-          onKeyPress={toggleShow}
-          role="button"
-          tabIndex={0}
+    <>
+      <div style={{ display: "none", visibility: "hidden" }}>
+        {/* Required for minecraft-server.net listing */}
+        <a
+          href="https://minecraft-server.net/category//"
+          title="Survival Minecraft Server List"
         >
-          Copy IP
-        </CopyIPBar>
-      )}
-    </CopyIPContainer>
+          Survival Minecraft Server List
+        </a>
+      </div>
+      <CopyIPContainer>
+        <CopyIPLabel>
+          Join us at <span>{ipAddr}</span>!
+        </CopyIPLabel>
+        {showNotification ? (
+          <CopyIPBar>Copied!</CopyIPBar>
+        ) : (
+          <CopyIPBar
+            onClick={toggleShow}
+            onKeyPress={toggleShow}
+            role="button"
+            tabIndex={0}
+          >
+            Copy IP
+          </CopyIPBar>
+        )}
+      </CopyIPContainer>
+    </>
   );
 };
 export default FooterJoinButton;
