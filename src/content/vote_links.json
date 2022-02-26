@@ -1,1 +1,31 @@
-[{ "name": "WIP", "url": "#" }]
+[
+  {
+    "name": "Minecraft-Server.net",
+    "url": "https://minecraft-server.net/details/LittleRpg2/"
+  },
+  {
+    "name": "Planet Minecraft",
+    "url": "https://www.planetminecraft.com/server/littlerpg/vote/"
+  },
+  {
+    "name": "Minecraft Servers",
+    "url": "https://minecraftservers.org/server/632710"
+  },
+  {
+    "name": "Minecraft Tracker",
+    "url": "https://minecraft-tracker.com/server/6808/vote/"
+  },
+  {
+    "name": "Minecraft Server List",
+    "url": "https://minecraft-server-list.com/server/486009/vote/"
+  },
+  {
+    "name": "Minecraft MP",
+    "url": "https://minecraft-mp.com/server/300862/vote/"
+  },
+  { "name": "TopG", "url": "https://topg.org/minecraft-servers/server-640803" },
+  {
+    "name": "Minecraft Survival Servers",
+    "url": "https://minecraftsurvivalservers.com/vote/227-littlerpg"
+  }
+]
